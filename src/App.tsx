@@ -1,11 +1,11 @@
 
-import { Inicio } from './views/Inicio';
+import { AllRoutes } from './routers/AllRoutes';
 
 
 function App(): JSX.Element {
   return (
-   <>
-   <Inicio/>
+   <>{/* aqui iria un context  */}
+   <AllRoutes/>
     </>
   );
 }

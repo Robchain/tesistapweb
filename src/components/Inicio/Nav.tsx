@@ -1,24 +1,22 @@
-import publienlace from "../../assets/publienlace.png"
-import { Navbar, NavbarBrand, Nav as Navi, NavItem, NavLink} from 'reactstrap';
+import publienlace from "../../assets/PUBLIENLACE LOGO _Mesa de trabajo 1.png"
+import { Navbar, NavbarBrand, Nav as Navdos, NavItem, NavLink} from 'reactstrap';
 
 export const Nav = () => {
   return (
-    <>
-     <Navbar  >
-     <NavbarBrand href="/">
+     <Navbar>
+     <NavbarBrand tag={'span'}>
       <img
         alt="logo"
         src={publienlace}
         style={{
-          height: 60,
-          width: 60,
+          width: 250,
         }}
       />
     </NavbarBrand>
-    <Navi   className="mx-auto" justified>
+    <Navdos   justified>
         <NavItem>
             <NavLink   href="#">
-            PROMOSIONALES
+            CONÓCENOS
             </NavLink>
         </NavItem>
         <NavItem>
@@ -28,28 +26,26 @@ export const Nav = () => {
         </NavItem>
         <NavItem>
             <NavLink   href="#">
-            IMPRENTA 
-            </NavLink>
-        </NavItem>
-        
-        <NavItem>
-            <NavLink   href="#">
-         GALERIA  
+           PRODUCTOS
             </NavLink>
         </NavItem>
         <NavItem>
             <NavLink   href="#">
-           NOSOTROS 
+        CONTACTENOS 
             </NavLink>
         </NavItem>
         <NavItem>
             <NavLink   href="#">
-           CONTACTENOS
+           CATALOGO
             </NavLink>
         </NavItem>
-      </Navi>
+        <NavItem>
+            <NavLink   href="#">
+           PROMOSIONES
+            </NavLink>
+        </NavItem>
+      </Navdos>
      </Navbar>
-     <hr/>
-</>
+
   )
 }

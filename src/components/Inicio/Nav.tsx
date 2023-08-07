@@ -3,7 +3,7 @@ import { Navbar, NavbarBrand, Nav as Navdos, NavItem, NavLink} from 'reactstrap'
 
 export const Nav = () => {
   return (
-     <Navbar>
+     <Navbar style={{fontWeight:'600'}}>
      <NavbarBrand tag={'span'}>
       <img
         alt="logo"
@@ -15,7 +15,7 @@ export const Nav = () => {
     </NavbarBrand>
     <Navdos   justified>
         <NavItem>
-            <NavLink   href="#">
+            <NavLink  href="#" className="asd">
             CONÓCENOS
             </NavLink>
         </NavItem>
